@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_EMAIL ="com.exemple.dadospessoais.email";
     public static final String EXTRA_IDADE ="com.exemple.dadospessoais.idade";
     public static final String EXTRA_PESO ="com.exemple.dadospessoais.peso";
-    public static final String EXTRA_ALTURA ="com.exemple.dadospessoais.peso";
+    public static final String EXTRA_ALTURA ="com.exemple.dadospessoais.altura";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
