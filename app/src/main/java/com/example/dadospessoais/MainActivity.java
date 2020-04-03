@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE ="com.exemple.dadospessoais.nome";
+    public static final String EXTRA_Nome ="com.exemple.dadospessoais.nome";
     public static final String EXTRA_NUMBER ="com.exemple.dadospessoais.telefone";
     public static final String EXTRA_EMAIL ="com.exemple.dadospessoais.email";
     public static final String EXTRA_IDADE ="com.exemple.dadospessoais.idade";
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         Float altura = Float.parseFloat(TextAltura.getText().toString());
 
 
-        intent.putExtra(EXTRA_MESSAGE, nome);
+        intent.putExtra(EXTRA_Nome, nome);
         intent.putExtra(EXTRA_NUMBER, telefone);
         intent.putExtra(EXTRA_EMAIL, email);
         intent.putExtra(EXTRA_IDADE, idade);
