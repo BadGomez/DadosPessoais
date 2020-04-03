@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">DadosPessoais</string>
+    <string name="edit_name">Nome</string>
+    <string name="edit_number">Telefone</string>
+    <string name="edit_email">Email</string>
+    <string name="edit_Age">Idade</string>
+    <string name="edit_Weight">Peso</string>
+    <string name="edit_height">Altura</string>
+    <string name="botão_enviar">Enviar</string>
 </resources>
