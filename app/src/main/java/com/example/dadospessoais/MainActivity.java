@@ -33,9 +33,62 @@ public class MainActivity extends AppCompatActivity {
         String nome = TextNome.getText().toString();
         String telefone = TextPhone.getText().toString();
         String email = TextEmail.getText().toString();
-        Integer idade = Integer.parseInt(TextIdade.getText().toString());
-        Float peso = Float.parseFloat(TextPeso.getText().toString());
-        Float altura = Float.parseFloat(TextAltura.getText().toString());
+        String strIdade = TextIdade.getText().toString();
+        String strPeso = TextPeso.getText().toString();
+        String strAltura = TextAltura.getText().toString();
+
+
+
+        if (nome.length() <= 0){
+            TextNome.setError("Preencha o nome");
+            TextNome.requestFocus();
+            return;
+        }
+
+        if (telefone.length() <= 0){
+            TextPhone.setError("Preencha o telefone");
+            TextPhone.requestFocus();
+            return;
+        }
+
+         if (email.length() <= 0){
+            TextEmail.setError("Preencha o email");
+            TextEmail.requestFocus();
+            return;
+        }
+
+        int idade;
+        try{
+            idade = Integer.parseInt(strIdade);
+            }catch(NumberFormatException e){
+            TextIdade.setError("Insira uma idade valida");
+            TextIdade.requestFocus();
+            return;
+       }
+
+       if(idade < 18) {
+           TextIdade.setError("A idade não pode ser inferior a 18 anos");
+           TextIdade.requestFocus();
+           return;
+       }
+
+        float peso;
+        try{
+            peso = Float.parseFloat(strPeso);
+        }catch(NumberFormatException e){
+            TextPeso.setError("Insira um peso valida");
+            TextPeso.requestFocus();
+            return;
+        }
+
+        float altura;
+        try{
+            altura = Float.parseFloat(strAltura);
+        }catch(NumberFormatException e){
+            TextAltura.setError("Insira uma altura valida");
+            TextAltura.requestFocus();
+            return;
+        }
 
 
         intent.putExtra(EXTRA_Nome, nome);
@@ -44,7 +97,6 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_IDADE, idade);
         intent.putExtra(EXTRA_PESO, peso);
         intent.putExtra(EXTRA_ALTURA, altura);
-
         startActivity(intent);
     }
 }
