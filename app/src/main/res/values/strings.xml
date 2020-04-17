@@ -1,10 +1,17 @@
 <resources>
-    <string name="app_name">DadosPessoais</string>
-    <string name="edit_name">Nome</string>
-    <string name="edit_number">Telefone</string>
+    <string name="app_name">Personal Info</string>
+    <string name="edit_name">Name</string>
+    <string name="edit_number">Phone</string>
     <string name="edit_email">Email</string>
-    <string name="edit_Age">Idade</string>
-    <string name="edit_Weight">Peso</string>
-    <string name="edit_height">Altura</string>
-    <string name="botão_enviar">Enviar</string>
+    <string name="edit_Age">Age</string>
+    <string name="edit_height">Height</string>
+    <string name="botão_enviar">Send</string>
+    <string name="edit_Weight">Weight</string>
+    <string name="nome_obrigatorio">Name is required.</string>
+    <string name="telefone_invalido">Invalid Phone. Phone is required.</string>
+    <string name="email_invalido">Email is required.</string>
+    <string name="idade_obrigatorio">Age is required.</string>
+    <string name="peso_invalido">Weight is required.</string>
+    <string name="altura_invalida">Height is required.</string>
+    <string name="idade_minima_obrigatoria">The age must be greater than 17.</string>
 </resources>

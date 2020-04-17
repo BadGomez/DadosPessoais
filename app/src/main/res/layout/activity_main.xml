@@ -23,7 +23,7 @@
             android:id="@+id/TextNome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nome"
+            android:hint="@string/edit_name"
             android:inputType="textPersonName|textCapWords" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -34,7 +34,7 @@
                 android:id="@+id/TextPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Telemóvel"
+                android:hint="@string/edit_number"
                 android:inputType="phone" />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -45,7 +45,7 @@
                     android:id="@+id/TextEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Email"
+                    android:hint="@string/edit_email"
                     android:inputType="textEmailAddress" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -56,7 +56,7 @@
                         android:id="@+id/TextIdade"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Idade"
+                        android:hint="@string/edit_Age"
                         android:inputType="number" />
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -67,7 +67,7 @@
                             android:id="@+id/TextPeso"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Peso"
+                            android:hint="@string/edit_Weight"
                             android:inputType="numberDecimal" />
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -78,7 +78,7 @@
                                 android:id="@+id/TextAltura"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="Altura"
+                                android:hint="@string/edit_height"
                                 android:inputType="numberDecimal" />
 
                         </com.google.android.material.textfield.TextInputLayout>

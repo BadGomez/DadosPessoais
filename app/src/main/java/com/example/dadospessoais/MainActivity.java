@@ -40,19 +40,19 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (nome.length() <= 0){
-            TextNome.setError("Preencha o nome");
+            TextNome.setError(getString(R.string.nome_obrigatorio));
             TextNome.requestFocus();
             return;
         }
 
-        if (telefone.length() <= 0){
-            TextPhone.setError("Preencha o telefone");
+        if (telefone.length() < 9){
+            TextPhone.setError(getString(R.string.telefone_invalido));
             TextPhone.requestFocus();
             return;
         }
 
          if (email.length() <= 0){
-            TextEmail.setError("Preencha o email");
+            TextEmail.setError(getString(R.string.email_invalido));
             TextEmail.requestFocus();
             return;
         }
@@ -61,13 +61,13 @@ public class MainActivity extends AppCompatActivity {
         try{
             idade = Integer.parseInt(strIdade);
             }catch(NumberFormatException e){
-            TextIdade.setError("Insira uma idade valida");
+            TextIdade.setError(getString(R.string.idade_obrigatorio));
             TextIdade.requestFocus();
             return;
        }
 
        if(idade < 18) {
-           TextIdade.setError("A idade não pode ser inferior a 18 anos");
+           TextIdade.setError(getString(R.string.idade_minima_obrigatoria));
            TextIdade.requestFocus();
            return;
        }
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         try{
             peso = Float.parseFloat(strPeso);
         }catch(NumberFormatException e){
-            TextPeso.setError("Insira um peso valida");
+            TextPeso.setError(getString(R.string.peso_invalido));
             TextPeso.requestFocus();
             return;
         }
@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         try{
             altura = Float.parseFloat(strAltura);
         }catch(NumberFormatException e){
-            TextAltura.setError("Insira uma altura valida");
+            TextAltura.setError(getString(R.string.altura_invalida));
             TextAltura.requestFocus();
             return;
         }
